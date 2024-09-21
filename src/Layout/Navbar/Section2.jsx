@@ -74,7 +74,7 @@ export const Section2 = () => {
 
   return (
     <div>
-      <ul className="py-[18px] first-navbar-section flex justify-between ">
+      <ul className="pt-[18px] first-navbar-section flex justify-between ">
         <div className="flex w-[100%] gap-5">
           {/* ---- input searching container----- */}
           <div className=" flex w-[60%] border-gray-400 border-[2px] relative">

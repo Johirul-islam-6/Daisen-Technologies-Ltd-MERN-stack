@@ -1,4 +1,3 @@
-import React from "react";
 import "./Navbar.css";
 
 export default function Drawer({ children, isOpen, setIsOpen, isFixed }) {

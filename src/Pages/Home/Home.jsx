@@ -1,7 +1,23 @@
 export const Home = () => {
+  const HomeTopButton = [
+    {
+      name: "",
+      category: "",
+    },
+  ];
+
   return (
-    <div>
-      <h1>This is My first Project file setup</h1>
-    </div>
+    <>
+      <div className="home-page maxWidth mx-auto">
+        {/* Home Top Button */}
+        <div className="flex justify-center">
+          {HomeTopButton.map((button, index) => (
+            <button key={index} className="home-top-button">
+              {button.name}
+            </button>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };

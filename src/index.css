@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background: #ffffff;
-} */
+body {
+  background-color: #eef3f9 !important;
+}
 
 .maxWidth {
   max-width: 1325px !important;

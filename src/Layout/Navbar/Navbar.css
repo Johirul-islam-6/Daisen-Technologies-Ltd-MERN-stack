@@ -34,6 +34,15 @@
   line-height: normal;
 }
 
+.link3rd {
+  color: #46aef7;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 606;
+  line-height: normal;
+}
+
 .navbar-searching-field {
   display: flex;
   height: 38px;
