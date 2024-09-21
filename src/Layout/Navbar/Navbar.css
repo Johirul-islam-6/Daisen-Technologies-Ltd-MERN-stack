@@ -1,0 +1,56 @@
+.Logo {
+  color: #000;
+  font-family: "Noto Sans JP";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.topNav-title {
+  color: #757575;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.link {
+  color: #46aef7;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.menu-link {
+  color: #333;
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navbar-searching-field {
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.search-dropdown-btn {
+  display: flex;
+  padding: 2px 1px 3px 1px;
+  justify-content: center;
+  align-items: center;
+}
+.searching-icon {
+  width: 62.5px;
+  height: 42px;
+  flex-shrink: 0;
+  fill: #464646;
+}
