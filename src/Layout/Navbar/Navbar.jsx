@@ -7,7 +7,7 @@ import { Section3 } from "./section3";
 export const Navbar = () => {
   return (
     <>
-      <div className="w-[100%] bg-[#ffff]">
+      <div className="w-[100%] bg-[#ffff] pt-[7px]">
         <div className=" pb-[15px] maxWidth mx-auto bg-[#FFFFFF] relative ">
           {/* ----------- navbar 1st section ------ */}
           <Section1 />

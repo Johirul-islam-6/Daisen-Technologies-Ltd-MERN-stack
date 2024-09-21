@@ -9,7 +9,7 @@ import notification from "../../assets/Navbar/icon/notification.png";
 
 export const Section2 = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [InputToggleDropdownOpen, setInputToggleDropdownOpen] = useState(false);
+  const [InputToggleDropdownOpen, setInputToggleDropdownOpen] = useState(true);
   const [focusedIndex, setFocusedIndex] = useState(0);
   // input field dropdown visibility
   const inputToggleDropdown = () => {
@@ -77,7 +77,7 @@ export const Section2 = () => {
       <ul className="pt-[18px] first-navbar-section flex justify-between ">
         <div className="flex w-[100%] gap-5">
           {/* ---- input searching container----- */}
-          <div className=" flex w-[60%] border-gray-400 border-[2px] relative">
+          <div className=" flex w-[60%] border-gray-600 border-[2px] relative">
             <div className="flex relative justify-between items-center  w-[100%]">
               {/* -------------- searching input field---------- */}
               <div className="input-field w-[68%] ">
@@ -105,10 +105,10 @@ export const Section2 = () => {
                             <button
                               type="button"
                               className={` w-full flex justify-start  px-4 py-1 border-[#ffff] hover:border-gray-300 border-l-[2px] ${
-                                index === focusedIndex ? "" : "" // Add your focus background color here
-                              } `} // Optional initial bg color for first item
-                              onFocus={() => setFocusedIndex(index)} // Set focused index when focused
-                              onBlur={() => setFocusedIndex(null)} // Reset on blur
+                                index === focusedIndex ? "" : ""
+                              } `}
+                              onFocus={() => setFocusedIndex(index)}
+                              onBlur={() => setFocusedIndex(null)}
                             >
                               <div className="flex gap-2">
                                 <div className="w-[60px] h-[60px] bg-gray-300"></div>

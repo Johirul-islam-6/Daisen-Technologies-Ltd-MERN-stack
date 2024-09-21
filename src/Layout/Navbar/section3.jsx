@@ -15,7 +15,7 @@ export const Section3 = () => {
           </h1>
         </button>
 
-        <div className="flex gap-4 items-center ps-3">
+        <div className="flex gap-2 items-center ps-1">
           <Link to={""} className="link3rd">
             Text
           </Link>

@@ -1,0 +1,12 @@
+.home-top-button {
+  display: flex;
+  padding: 8px 20px 7px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

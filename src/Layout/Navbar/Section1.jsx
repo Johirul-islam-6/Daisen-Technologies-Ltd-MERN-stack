@@ -7,7 +7,7 @@ export const Section1 = () => {
         {/* -------- navbar first left section --------- */}
         <div className="left-site-div flex gap-x-[130px]">
           <li>
-            <Link className="Logo" to={"/"}>
+            <Link className="Logo uppercase" to={"/"}>
               Logo
             </Link>
           </li>
