@@ -17,7 +17,7 @@ export const HomeContainer = () => {
   ];
   return (
     <>
-      <div className="home-Container bg-[#ffff] px-[20px] py-[22px]">
+      <div className=" ">
         {/* -----------top Heading --------- */}
         <h2 className="HomeContainer-Heading  border-l-[10px] border-[#46AEF7] ps-[15px]">
           フォローリスト

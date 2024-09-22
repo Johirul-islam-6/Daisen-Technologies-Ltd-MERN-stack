@@ -3,6 +3,7 @@ import "./Home.css";
 import { IoSettingsOutline } from "react-icons/io5";
 import { HomeContainer } from "../../Components/Home/HomeContainer";
 import CategorySlider from "../../Components/Home/HomeTopBottom/CategorySlider";
+import { HomeTable } from "../../Components/Home/HomeTopBottom/HomeTable";
 
 export const Home = () => {
   const [focusedIndex, setFocusedIndex] = useState(0);
@@ -107,7 +108,12 @@ export const Home = () => {
         ))}
       </div>
 
-      <HomeContainer />
+      <div className="Home-Container bg-[#ffff] px-[20px] py-[22px]">
+        <HomeContainer />
+
+        {/* ---------- all Table -------- */}
+        <HomeTable />
+      </div>
     </div>
   );
 };
