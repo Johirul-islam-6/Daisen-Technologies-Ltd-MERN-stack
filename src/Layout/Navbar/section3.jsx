@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Section3 = () => {
   return (
     <div>
-      <div className="flex pt-[11px]">
+      <div className="hidden md:flex pt-[11px]">
         <button
           id="dropdown-button"
           type="button"

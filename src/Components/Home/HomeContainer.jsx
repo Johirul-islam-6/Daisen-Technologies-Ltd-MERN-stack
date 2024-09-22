@@ -18,7 +18,7 @@ export const HomeContainer = () => {
   ];
   return (
     <>
-      <div className="flex md:block justify-between h-[50px] md:h-[auto] items-center py-[3px] md:py-[0]">
+      <div className="flex md:block justify-between h-[50px] md:h-[auto] items-center py-[3px] md:py-[0] px-[15px] md:px-[0]">
         {/* -----------top Heading --------- */}
         <h2 className="HomeContainer-Heading md:text-[24px] text-[16px]  border-l-[4px] md:border-l-[10px] border-[#46AEF7] ps-[15px]">
           フォローリスト

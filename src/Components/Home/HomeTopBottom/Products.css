@@ -14,18 +14,17 @@
   width: 350px !important;
   margin-right: 5px !important;
 }
+
+/* -------- Responsive button slider --------- */
 @media (max-width: 540px) {
-  .product_image {
-    width: 65px;
-    height: 61px;
-  }
-  .toper-box {
-    height: 200px !important;
-    width: 100% !important;
-  }
   .swiper-slide {
-    width: 200px !important;
-    margin-right: 5px !important;
+    width: 32% !important;
+    height: 30px !important;
+    margin: 0 auto !important;
+    margin-right: 8px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 }
 @media (max-width: 400px) {

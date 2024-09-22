@@ -74,16 +74,16 @@ export const Section2 = () => {
 
   return (
     <div>
-      <ul className="pt-[18px] first-navbar-section flex justify-between ">
+      <ul className="pt-[20px] first-navbar-section flex justify-between ">
         <div className="flex w-[100%] gap-5">
           {/* ---- input searching container----- */}
-          <div className=" flex w-[60%] border-gray-600 border-[2px] relative">
-            <div className="flex relative justify-between items-center  w-[100%]">
+          <div className="flex h-[40px] w-[100%] md:w-[60%] border-gray-600 border-[2px] relative">
+            <div className="flex relative justify-between items-center w-[100%]">
               {/* -------------- searching input field---------- */}
-              <div className="input-field w-[68%] ">
+              <div className="input-field md:w-[68%] ">
                 <input
                   onClick={inputToggleDropdown}
-                  className="navbar-searching-field text-gray-400 w-[100%] ps-2"
+                  className="navbar-searching-field text-gray-400 bg-transparent text-[14px] md:text-[16px] w-[100%] ps-2"
                   type="search"
                   defaultValue={`${InputToggleDropdownOpen ? "" : "text"}`}
                   // disabled
@@ -130,17 +130,17 @@ export const Section2 = () => {
                 )}
               </div>
 
-              {/* ----------  dropdown filter and searching button --------- */}
-              <div className="w-[32%] flex gap-3  justify-end items-center">
+              {/* ----------  dropdown filter and searching button section --------- */}
+              <div className="md:w-[32%] flex gap-2 md:gap-3  justify-end items-center">
                 {/* Dropdown Button */}
                 <div className="dropdown relative">
                   <button
                     id="dropdown-button"
                     type="button"
                     onClick={toggleDropdown}
-                    className="search-dropdown-btn"
+                    className="search-dropdown-btn p-[2px 1px 3px 1px]"
                   >
-                    <h1 className="bg-[#e3e3e3] text-[14px] text-[#757575] lg:p-1 lg:px-3">
+                    <h1 className="bg-[#e3e3e3] text-[10px] md:text-[14px] text-[#757575] p-1 lg:px-3">
                       {" "}
                       全てのカテゴリ
                     </h1>
@@ -171,13 +171,17 @@ export const Section2 = () => {
                   type="submit"
                   className="relative bg-[#464646] h-[42px] flex justify-center items-center w-[62px]"
                 >
-                  <img className="w-[33px] h-[32px]" src={searchIcon} alt="" />
+                  <img
+                    className="w-[25px] h-[25px] md:w-[33px] md:h-[32px]"
+                    src={searchIcon}
+                    alt=""
+                  />
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="navbar-right-section w-[40%] flex justify-between h-[45px]">
+          <div className="hidden md:flex  navbar-right-section md:w-[40%] justify-between h-[45px]">
             <button
               id="dropdown-button"
               type="button"

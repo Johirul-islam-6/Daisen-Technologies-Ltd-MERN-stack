@@ -85,12 +85,12 @@ export const HomeTable = () => {
   return (
     <>
       {/* ------------ home page table Array ----------- */}
-      <div className="HomeTable bg-[#fff]">
+      <div className="HomeTable bg-[#fff] ">
         {Array.isArray(userTable) &&
           userTable.map((profile, index) => (
             <div
               key={index}
-              className="relative border-b-[1px] border-t-[1px] border-[#757575] py-4 flex flex-col md:flex-row gap-4 items-center  md:px-[40px]"
+              className="px-[15px]  relative border-b-[1px] border-t-[1px] border-[#757575] py-4 flex flex-col md:flex-row gap-4 items-center  md:px-[40px]"
             >
               {/* ------- left site table container ------ */}
               <div className="left-site-table relative flex flex-col md:flex-row gap-4 w-full md:w-[35%]">
@@ -167,7 +167,7 @@ export const HomeTable = () => {
                           className="w-10 h-10 md:w-20 md:h-20 object-cover"
                         />
                       ))}
-                      <div className="w-full h-10 md:w-20 md:h-20 flex items-center justify-center bg-transparent border border-[#E2E2E2]">
+                      <div className="w-full h-10 md:w-20 md:h-20 flex items-center justify-center bg-transparent border-b-[1px] border-r-[1px] border-t-[1px] border-[#E2E2E2]">
                         <h1 className="md:hidden text-[12px] font-normal text-start text-[#757575]">
                           +577 商品を出品中
                         </h1>

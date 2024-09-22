@@ -53,7 +53,7 @@
 
 .search-dropdown-btn {
   display: flex;
-  padding: 2px 1px 3px 1px;
+
   justify-content: center;
   align-items: center;
 }

@@ -28,8 +28,8 @@ export const Home = () => {
   ];
 
   return (
-    <div className="md:mt-[20px] home-page maxWidth mx-auto h-[100vh]">
-      <div className="bg-[#fff] md:bg-transparent pt-[15px] md:pt-[0px]">
+    <div className="md:mt-[20px] home-page maxWidth mx-auto h-[100vh] ">
+      <div className="bg-[#fff] md:bg-transparent pt-[15px] md:pt-[0px] px-[15px] md:px-[0]">
         {/*------------ Home Top Button Section ------------ */}
         <div className="hidden md:grid grid-cols-7 bg-[#ffff] justify-center py-[20px] px-[27px] gap-[18px]">
           {HomeTopButton.map((button, index) => (
@@ -55,13 +55,13 @@ export const Home = () => {
             <button
               key={index}
               onClick={() => setFocusedIndex2(index)} // Set focused index when focused
-              className={` h-[30px] md:h-[47px] flex items-center justify-center py-[11px] rounded-md ${
+              className={` h-[30px] md:h-[47px] flex items-center justify-center py-[12px] rounded-md ${
                 focusedIndex2 === index
                   ? "bg-[#46AEF7] text-[#ffff]"
                   : "bg-[#ffff] border-[#46AEF7] border-[1px]"
               } text-[#46AEF7]`}
             >
-              <div className="flex justify-center items-center gap-1  text-[10px] md:text-[16px] font-[500]">
+              <div className="flex justify-center items-center gap-1 text-[10px] md:text-[16px] font-[500]">
                 {index === 0 && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ export const Home = () => {
                 {index === 1 && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-[15px] h-[10px] md:w-[22px] md:h-[18px]"
+                    className="w-[15px] h-[13px] md:w-[22px] md:h-[18px]"
                     viewBox="0 0 22 14"
                     fill="none"
                   >
@@ -109,7 +109,7 @@ export const Home = () => {
           ))}
         </div>
       </div>
-      <div className="Home-Container md:bg-[#ffff] md:px-[20px] md:py-[22px] px-[6px] ">
+      <div className="Home-Container md:bg-[#ffff] md:px-[20px] md:py-[22px]  ">
         <HomeContainer />
 
         {/* ---------- all Table -------- */}

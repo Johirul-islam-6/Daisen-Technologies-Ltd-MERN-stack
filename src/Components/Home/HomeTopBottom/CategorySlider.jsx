@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Removed Autoplay import since it's not needed
 import "./Products.css";
 import { useState } from "react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,7 +18,7 @@ const CategorySlider = ({ HomeTopButton }) => {
       loop={false} // Set loop to false
       breakpoints={{
         420: { slidesPerView: 3, spaceBetween: 5 },
-        640: { slidesPerView: 3, spaceBetween: 5 },
+        640: { slidesPerView: 4, spaceBetween: 5 },
         1160: { slidesPerView: 6, spaceBetween: 10 },
         1650: { slidesPerView: 8, spaceBetween: 10 },
         2000: { slidesPerView: 9, spaceBetween: 10 },
@@ -31,11 +30,13 @@ const CategorySlider = ({ HomeTopButton }) => {
           <button
             key={index}
             onClick={() => setFocusedIndex(index)} // Set focused index on click
-            className={`home-top-button ${
+            className={`flex justify-center items-center w-[100%] h-[100%] rounded-[4px] ${
               focusedIndex === index ? "bg-[#46AEF7] text-[#ffff]" : ""
             } text-[#333]`}
           >
-            {item.name}
+            <h1 className=" p-[8px 20px 7px 20px] text-[12px] text-center rounded-[4px] font-[500]">
+              {item.name}
+            </h1>
           </button>
         </SwiperSlide>
       ))}
