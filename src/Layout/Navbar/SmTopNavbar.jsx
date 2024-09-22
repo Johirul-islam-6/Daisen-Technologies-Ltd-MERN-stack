@@ -1,4 +1,3 @@
-import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import menubar from "../../assets/Navbar/icon/menu.png";
 export const SmTopNavbar = () => {
@@ -25,7 +24,7 @@ export const SmTopNavbar = () => {
               </Link>
 
               <li className=" relative">
-                <div className="absolute right-[-1px] top-[-12px] text-[8px] rounded-[32px] flex justify-center items-center bg-[#F7466F] w-[15px] h-[15px]">
+                <div className="absolute right-[-1px] top-[-10px] text-[8px] rounded-[32px] flex justify-center items-center text-[#ffff] bg-[#F7466F] w-[15px] h-[15px]">
                   3
                 </div>
                 <Link

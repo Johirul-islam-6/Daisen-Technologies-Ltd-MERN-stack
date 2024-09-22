@@ -33,7 +33,7 @@ export const HomeContainer = () => {
               onClick={() => setFocusedIndex(index)}
               key={index}
               className={`home-container-btn w-[159px] h-[33px] border-[2px] 
-          font-[700] text-[14px]  rounded-[3px] ${
+          font-[700] text-[14px]  rounded-[4px] ${
             focusedIndex === index
               ? "bg-[#46AEF7] text-[#FFF]"
               : "text-[#46AEF7] border-[#46AEF7]"
@@ -45,19 +45,19 @@ export const HomeContainer = () => {
           ))}
         </div>
         {/* ----------- button total count item ------- */}
-        <div className="hidden md:flex gap-[13px] mt-[6px]">
-          <button className="w-[159px] h-[33px] text-[#757575] text-[12px] font-[400] ">
+        <div className="hidden md:flex gap-[13px]">
+          <button className="w-[159px] uppercase h-[33px] text-[#757575] text-[12px] font-[400] ">
             TOTAL{" "}
             <span className="text-[14px] text-[#46AEF7] font-[700]">100</span>
           </button>
-          <button className="w-[159px] h-[33px] text-[#757575] text-[12px] font-[400] ">
+          <button className="w-[159px] uppercase h-[33px] text-[#757575] text-[12px] font-[400] ">
             TOTAL{" "}
             <span className="text-[14px] text-[#46AEF7] font-[700]">100</span>
           </button>
         </div>
 
         {/* --------------- driven ----------- */}
-        <div className="hidden md:flex mt-[10px] py-[19px] px-[80px]  gap-[80px] border-t-[1px] border-b-[1px] border-[#757575]">
+        <div className="hidden md:flex mt-[10px] py-[16px] px-[80px]  gap-[80px] border-t-[1px] border-b-[1px] border-[#757575]">
           <h1 className="text-[16px] font-[500] text-[#757575]">
             ユーザーネーム
           </h1>

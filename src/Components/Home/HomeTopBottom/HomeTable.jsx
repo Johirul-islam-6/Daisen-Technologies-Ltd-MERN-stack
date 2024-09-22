@@ -90,7 +90,7 @@ export const HomeTable = () => {
           userTable.map((profile, index) => (
             <div
               key={index}
-              className="px-[15px]  relative border-b-[1px] border-t-[1px] border-[#757575] py-4 flex flex-col md:flex-row gap-4 items-center  md:px-[40px]"
+              className="px-[15px] relative border-b-[1px] border-t-[1px] border-[#757575] md:py-4 py-[10px] flex flex-col md:flex-row gap-4 items-center  md:px-[40px]"
             >
               {/* ------- left site table container ------ */}
               <div className="left-site-table relative flex flex-col md:flex-row gap-4 w-full md:w-[35%]">
@@ -155,7 +155,7 @@ export const HomeTable = () => {
               </div>
 
               {/*------- right site table container Image Gallery --------- */}
-              <div className="right-site-table  flex flex-col md:flex-row gap-3 md:gap-[50px] justify-between w-full md:w-[75%]">
+              <div className="right-site-table flex flex-col md:flex-row gap-3 md:gap-[50px] justify-between w-full md:w-[75%]">
                 <div className="flex md:flex-wrap gap-2 ">
                   {profile?.allImage.length > 0 ? (
                     <>
@@ -178,7 +178,7 @@ export const HomeTable = () => {
                       </div>
                     </>
                   ) : (
-                    <div className="flex items-start ">
+                    <div className="flex items-start md:h-20 h-10">
                       <h1 className="text-sm font-medium text-[#757575]">
                         {profile?.arrayofData}
                       </h1>
@@ -187,9 +187,9 @@ export const HomeTable = () => {
                 </div>
 
                 {/* Right Side Buttons */}
-                <div className="flex  justify-center items-center gap-x-[32px]">
+                <div className="flex justify-center items-center gap-x-[5px] lg:gap-x-[30px] ">
                   {/* Follow Button */}
-                  <button className="bg-[#F7466F] text-white px-4 py-2 text-xs md:text-[14px] font-medium">
+                  <button className="bg-[#F7466F] text-white px-3 py-[6px] md:py-2 text-xs lg:text-[14px] font-medium">
                     - フォローをやめる
                   </button>
 
@@ -231,7 +231,7 @@ export const HomeTable = () => {
       </div>
 
       {/* ----------- pagination section ---------- */}
-      <div className="flex pt-[37px] justify-between">
+      <div className="flex pt-[20px] pb-[10px] md:pt-[36px] justify-between">
         <h1 className="text-[10px] font-[500] text-[#757575]">
           合計 0 1 件中 0 1 - 10 件を表示 1
         </h1>

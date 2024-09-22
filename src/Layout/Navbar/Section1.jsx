@@ -5,7 +5,7 @@ export const Section1 = () => {
     <div>
       <ul className="first-navbar-section flex justify-between ">
         {/* -------- navbar first left section --------- */}
-        <div className="left-site-div flex gap-x-[130px]">
+        <div className="left-site-div flex gap-x-[132px]">
           <li>
             <Link className="Logo uppercase" to={"/"}>
               Logo
@@ -22,7 +22,7 @@ export const Section1 = () => {
         </div>
 
         <div className="navbar-right-section">
-          <li className="flex gap-2">
+          <li className="flex ">
             <Link className="text-[#46AEF7]  font-bold" to={"/"}>
               初めての方へ
             </Link>

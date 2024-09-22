@@ -18,7 +18,7 @@ export const Navbar = () => {
         <SmTopNavbar />
       </div>
 
-      <div className="w-[100%] bg-[#ffff] md:pt-[7px] px-[15px] md:px-[0]">
+      <div className="w-[100%] bg-[#ffff] md:pt-[10px] px-[15px] md:px-[0]">
         <div className=" pb-[15px] maxWidth mx-auto bg-[#FFFFFF] relative ">
           {/* ----------- navbar 1st section ------ */}
           <div className="hidden md:block">

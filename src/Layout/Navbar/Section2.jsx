@@ -74,10 +74,10 @@ export const Section2 = () => {
 
   return (
     <div>
-      <ul className="pt-[20px] first-navbar-section flex justify-between ">
+      <ul className="pt-[16px] first-navbar-section flex justify-between ">
         <div className="flex w-[100%] gap-5">
           {/* ---- input searching container----- */}
-          <div className="flex h-[40px] w-[100%] md:w-[60%] border-gray-600 border-[2px] relative">
+          <div className="flex h-[42px] w-[100%] md:w-[60%] border-gray-600 border-[2px] relative">
             <div className="flex relative justify-between items-center w-[100%]">
               {/* -------------- searching input field---------- */}
               <div className="input-field md:w-[68%] ">
@@ -95,7 +95,9 @@ export const Section2 = () => {
                   <div className="absolute left-0 top-11  z-10 bg-white divide-y divide-gray-100 rounded-lg  w-[100%]">
                     <ul className="py-2 p-3 bg-[#ffff] border-gray-400 border-[1px] rounded-md">
                       <div className="pb-2 ">
-                        <h1 className="text-gray-600">Test Category</h1>
+                        <h1 className="text-gray-600 text-[14px]">
+                          Test Category
+                        </h1>
                         <div className="w-[100%] h-[2px] bg-gray-300 mt-2"></div>
                       </div>
 
@@ -111,12 +113,12 @@ export const Section2 = () => {
                               onBlur={() => setFocusedIndex(null)}
                             >
                               <div className="flex gap-2">
-                                <div className="w-[60px] h-[60px] bg-gray-300"></div>
+                                <div className="md:w-[60px] w-[40px] h-[40px] md:h-[60px] bg-gray-300"></div>
                                 <div className="">
-                                  <p className="text-start text-gray-600 text-[17px]">
+                                  <p className="text-start text-gray-600 md:text-[17px]">
                                     {item?.name}
                                   </p>
-                                  <h1 className="text-start font-bold text-[18px] text-[#F7466F]">
+                                  <h1 className="text-start font-bold md:text-[18px] text-[#F7466F]">
                                     {item?.Price}
                                   </h1>
                                 </div>
@@ -147,7 +149,7 @@ export const Section2 = () => {
                   </button>
                   {/* Dropdown Menu */}
                   {isDropdownOpen && (
-                    <div className="absolute left-0 top-10 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <div className="absolute md:left-0 right-[-50px] top-[32px] md:top-10 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                       <ul className="py-2 bg-[#ffff] border-gray-400 border-[1px] rounded-md">
                         {DropdownMenuContent?.map((item, index) => (
                           <li key={index}>
@@ -192,7 +194,7 @@ export const Section2 = () => {
                 条件指定+
               </h1>
             </button>
-            <div className="flex gap-6">
+            <div className="flex gap-[26px]">
               {IconMenu?.map((menu, index) => (
                 <li key={index} className="">
                   <Link
@@ -208,8 +210,8 @@ export const Section2 = () => {
                   </Link>
                 </li>
               ))}
-              <li className=" relative">
-                <div className="absolute right-[-3px] top-[-7px] text-[11px] rounded-[32px] flex justify-center items-center bg-[#F7466F] w-[20px] h-[20px]">
+              <li className=" relative ms-2">
+                <div className="absolute right-[-8px] top-[-7px] text-[11px] text-[#ffff] rounded-[32px] flex justify-center items-center bg-[#F7466F] w-[20px] h-[20px]">
                   3
                 </div>
                 <Link
