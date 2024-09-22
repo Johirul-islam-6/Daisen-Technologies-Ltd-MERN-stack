@@ -140,7 +140,7 @@ export const Section2 = () => {
                     onClick={toggleDropdown}
                     className="search-dropdown-btn"
                   >
-                    <h1 className="bg-[#e3e3e3] text-[#757575] p-1 px-3">
+                    <h1 className="bg-[#e3e3e3] text-[14px] text-[#757575] lg:p-1 lg:px-3">
                       {" "}
                       全てのカテゴリ
                     </h1>

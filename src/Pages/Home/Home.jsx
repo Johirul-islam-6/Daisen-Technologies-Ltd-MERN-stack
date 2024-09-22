@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Home.css";
 import { IoSettingsOutline } from "react-icons/io5";
 import { HomeContainer } from "../../Components/Home/HomeContainer";
+import CategorySlider from "../../Components/Home/HomeTopBottom/CategorySlider";
 
 export const Home = () => {
   const [focusedIndex, setFocusedIndex] = useState(0);
@@ -28,7 +29,7 @@ export const Home = () => {
   return (
     <div className="mt-[20px] home-page maxWidth mx-auto h-[100vh]">
       {/*------------ Home Top Button Section ------------ */}
-      <div className="grid grid-cols-7 bg-[#ffff] justify-center py-[20px] px-[27px] gap-[18px]">
+      <div className="hidden md:grid grid-cols-7 bg-[#ffff] justify-center py-[20px] px-[27px] gap-[18px]">
         {HomeTopButton.map((button, index) => (
           <button
             key={index}
@@ -40,6 +41,10 @@ export const Home = () => {
             {button.name}
           </button>
         ))}
+      </div>
+
+      <div className="md:hidden flex">
+        <CategorySlider HomeTopButton={HomeTopButton} />
       </div>
 
       {/*------------ Home 2nd Button Section -------------- */}
