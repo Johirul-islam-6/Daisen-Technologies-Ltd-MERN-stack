@@ -1,10 +1,18 @@
+import { useState } from "react";
 import { Section1 } from "../../Components/Navbar/Section1";
 import { Section2 } from "../../Components/Navbar/Section2";
 import { Section3 } from "../../Components/Navbar/Section3";
 import { SmTopNavbar } from "../../Components/Navbar/SmTopNavbar";
 import "./Navbar.css";
+import Drawer from "./Drawer";
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       {/* ------------- Start only Small Devices Top Color Navbar  -------- */}
@@ -14,8 +22,15 @@ export const Navbar = () => {
           background: "linear-gradient(90deg, #42B2F1 0%, #20E1BA 100%)",
         }}
       >
-        <SmTopNavbar />
+        <SmTopNavbar isOpen={isOpen} menuToggle={menuToggle} />
       </div>
+      {/* ------------- Small Device Menu Toggle Open --------- */}
+      {isOpen && (
+        <>
+          <Drawer isOpen={isOpen} menuToggle={menuToggle} />
+        </>
+      )}
+
       {/* ------------- End only Small Devices Top Color Navbar   -------- */}
 
       <div className="w-[100%] bg-[#ffff] md:pt-[10px] px-[15px] md:px-[0]">

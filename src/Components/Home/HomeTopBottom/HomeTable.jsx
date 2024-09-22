@@ -154,7 +154,7 @@ export const HomeTable = () => {
                 </div>
               </div>
 
-              {/*------- right site table container Image Gallery --------- */}
+              {/*------- right site table container Image Gallery map --------- */}
               <div className="right-site-table flex flex-col md:flex-row gap-3 md:gap-[50px] justify-between w-full md:w-[75%]">
                 <div className="flex md:flex-wrap gap-2 ">
                   {profile?.allImage.length > 0 ? (

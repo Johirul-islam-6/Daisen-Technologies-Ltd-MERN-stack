@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import menubar from "../../assets/Navbar/icon/menu.png";
-export const SmTopNavbar = () => {
+export const SmTopNavbar = ({ menuToggle, isOpen }) => {
   return (
     <div className="maxWidth mx-auto px-[15px]">
       <ul className=" first-navbar-section w-[100%] flex justify-between ">
@@ -48,9 +49,32 @@ export const SmTopNavbar = () => {
                 </Link>
               </li>
 
-              <Link className="link flex justify-center items-center" to={"/"}>
-                {/* <FaBars className="text-[#ffff] text-[22px] font-[400]" /> */}
-                <img src={menubar} alt="" />
+              <Link
+                onClick={() => menuToggle()}
+                className="link flex justify-center items-center"
+                to={"/"}
+              >
+                {/* <FaBars className="text-[#8a0b0b] text-[22px] font-[400]" /> */}
+                {isOpen ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    color="#ffff"
+                    fill="none"
+                  >
+                    <path
+                      d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                ) : (
+                  <img src={menubar} alt="" />
+                )}
               </Link>
             </div>
           </div>

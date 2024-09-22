@@ -63,3 +63,17 @@
   flex-shrink: 0;
   fill: #464646;
 }
+
+.drawer {
+  position: absolute;
+  top: 50px;
+  right: -100%;
+  height: auto;
+  width: 80%;
+  z-index: 1000;
+  transition: right 1s ease-in-out;
+}
+
+.drawer.open {
+  right: 0;
+}
