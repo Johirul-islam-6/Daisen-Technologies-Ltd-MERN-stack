@@ -28,9 +28,10 @@ export const Home = () => {
   ];
 
   return (
+    // --------------- This is my Home Page Design -------
     <div className="md:mt-[17px] home-page maxWidth mx-auto h-[100vh] ">
       <div className="bg-[#fff] md:bg-transparent pt-[15px] md:pt-[0px] px-[15px] md:px-[0]">
-        {/*------------ Home Top Button Section ------------ */}
+        {/*------------ Start Home First Buttons Section ------------ */}
         <div className="hidden md:grid grid-cols-7 bg-[#ffff] justify-center py-[20px] px-[27px] gap-[18px]">
           {HomeTopButton.map((button, index) => (
             <button
@@ -44,12 +45,12 @@ export const Home = () => {
             </button>
           ))}
         </div>
-
+        {/*------------ Small Device First Buttons Section ------------ */}
         <div className="md:hidden flex">
           <CategorySlider HomeTopButton={HomeTopButton} />
         </div>
 
-        {/*------------ Home 2nd Button Section -------------- */}
+        {/*------------  2nd Button Home Section -------------- */}
         <div className="grid grid-cols-3 justify-center py-[22px] gap-3 md:gap-[21px]">
           {Home2ndButton.map((button, index) => (
             <button
@@ -109,10 +110,12 @@ export const Home = () => {
           ))}
         </div>
       </div>
+
+      {/* ------------------- Home Container Design ----------- */}
       <div className="Home-Container md:bg-[#ffff] md:px-[20px] md:py-[22px]  ">
         <HomeContainer />
 
-        {/* ---------- all Table -------- */}
+        {/* ---------- All Table Design -------- */}
         <HomeTable />
       </div>
     </div>

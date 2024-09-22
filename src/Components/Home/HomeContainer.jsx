@@ -1,11 +1,9 @@
 import { useState } from "react";
-import "./HomeContainer.css";
 import { FaEllipsisV } from "react-icons/fa";
 export const HomeContainer = () => {
   const [focusedIndex, setFocusedIndex] = useState(1);
 
   // ---------- button --------
-
   const HomeContainerButton = [
     {
       name: " フォロワー",
@@ -16,11 +14,12 @@ export const HomeContainer = () => {
       value: "2",
     },
   ];
+
   return (
     <>
       <div className="flex md:block justify-between h-[50px] md:h-[auto] items-center py-[3px] md:py-[0] px-[15px] md:px-[0]">
         {/* -----------top Heading --------- */}
-        <h2 className="HomeContainer-Heading md:text-[24px] text-[16px]  border-l-[4px] md:border-l-[10px] border-[#46AEF7] ps-[15px]">
+        <h2 className="text-[#757575] font-[700] md:text-[24px] text-[16px]  border-l-[4px] md:border-l-[10px] border-[#46AEF7] ps-[15px]">
           フォローリスト
         </h2>
         <h2 className="flex md:hidden text-[#46AEF7] ">
@@ -44,7 +43,7 @@ export const HomeContainer = () => {
             </button>
           ))}
         </div>
-        {/* ----------- button total count item ------- */}
+        {/* ----------- total count item ------- */}
         <div className="hidden md:flex gap-[13px]">
           <button className="w-[159px] uppercase h-[33px] text-[#757575] text-[12px] font-[400] ">
             TOTAL{" "}
@@ -56,7 +55,7 @@ export const HomeContainer = () => {
           </button>
         </div>
 
-        {/* --------------- driven ----------- */}
+        {/* --------------- Table top section ----------- */}
         <div className="hidden md:flex mt-[10px] py-[16px] px-[80px]  gap-[80px] border-t-[1px] border-b-[1px] border-[#757575]">
           <h1 className="text-[16px] font-[500] text-[#757575]">
             ユーザーネーム

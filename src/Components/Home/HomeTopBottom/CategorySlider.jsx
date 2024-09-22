@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Swiper, SwiperSlide } from "swiper/react";
 // Removed Autoplay import since it's not needed
-import "./Products.css";
+import "./ButtomSlider.css";
 import { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,7 +15,7 @@ const CategorySlider = ({ HomeTopButton }) => {
       slidesPerView={2}
       spaceBetween={10}
       speed={5000}
-      loop={false} // Set loop to false
+      loop={false}
       breakpoints={{
         420: { slidesPerView: 3, spaceBetween: 5 },
         640: { slidesPerView: 4, spaceBetween: 5 },
